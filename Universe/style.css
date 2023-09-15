@@ -1,0 +1,112 @@
+
+body{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   height: 150px;
+   margin-right: 50%;
+   background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/10307.jpg');
+   background-size: cover;
+
+}
+
+
+.ring {
+   position: absolute;
+   width: 600px;
+   height: 600px;
+   margin: 0 auto;
+   border: 2px solid rgb(68, 138, 214);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .ball-holder {
+   position: absolute;
+   width: 12px;
+   height: 590px;
+   left: 302px;
+   top: 0px;
+   animation: loading 10.3s linear infinite;
+   
+   border: 2px solid rgb(109, 232, 98);
+ }
+ 
+ .ball {
+   position: absolute;
+   top: -14px;
+   left: 0;
+   width: 60px;
+   height: 60px;
+
+  
+ }
+ 
+ @keyframes loading {
+   0%{
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ 
+
+
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1vh;
+    margin-top: 30px;
+    
+}
+
+.earth{
+    position: absolute;
+    top: -13px;
+    border-radius: 360px;
+    left: 0;
+    width: 90px;
+    animation: loading 1.3s linear infinite;
+    filter: drop-shadow(10px 10px 100px  rgb(70, 225, 23));
+}
+
+
+.sun{
+   
+   display: block;
+   animation: spin 60s infinite;
+   width: 200px;
+}
+
+@keyframes spin { 
+   100% { 
+        
+       transform:rotate(360deg); 
+   } 
+
+}
+
+.planet{
+   position: absolute;
+   top: -120px;
+   border-radius: 360px;
+   left: 0;
+   width: 50px;
+   animation: loading 5.3s linear infinite;
+   filter: drop-shadow(10px 10px 100px  rgb(70, 225, 23));
+
+}
+.moon{
+   position: absolute;
+   top: 120px;
+   border-radius: 360px;
+   left: 0;
+   width: 40px;
+   animation: loading 1.3s linear infinite;
+   filter: drop-shadow(10px 10px 100px  rgb(70, 225, 23));
+}
